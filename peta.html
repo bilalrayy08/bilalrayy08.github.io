@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmap Dashboard</title>
+    <!-- Menghubungkan dengan file CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Menghubungkan dengan file CSS Chart.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css">
+    <!-- Menghubungkan dengan file CSS khusus untuk dashboard -->
+    <style>
+        #map {
+            height: 550px;
+            width: 105%;
+            border: none;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .chart-container {
+            max-width: 400px;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center d-flex justify-content-center">Peta Wisata Di Temanggung</h3>
+                <iframe id="map" src="qgis.html" frameborder="0"></iframe>
+            </div>
+    
+            <div class="col-md-6"><br>
+                <h5 class="text-center">Jumlah Wisatawan Per Bulan Tahun 2022</h5>
+                <div class="chart-container">
+                    <canvas id="pieChart"></canvas>
+                </div><br>
+                <h5 class="text-center">Pertumbuhan Wisatawan Dari Tahun 2018-2022</h5>
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+                    
+
+    <!-- Menghubungkan dengan file JavaScript Bootstrap dan Chart.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        // Mendefinisikan data untuk pie chart
+var pieChartData = {
+labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September',],
+datasets: [{
+data: [48507, 29892, 37113, 19753, 108626, 53624, 48056, 31746, 2586],
+backgroundColor: ['#CBEAA6', '#FFFACD', '#ADD8E6', '#F08080', '#E7EEEC', '#DBC2CF', '#D3D3D3', '#90EE90', '#FFB6C1'],
+hoverBackgroundColor: ['#94c045', '#94c045', '#94c045', '#94c045', '#94c045', '#94c045','#94c045', '#94c045', '#94c045']
+}]
+};
+
+// Membuat pie chart
+var pieChartCtx = document.getElementById('pieChart').getContext('2d');
+var pieChart = new Chart(pieChartCtx, {
+type: 'pie',
+data: pieChartData
+});
+
+// Mendefinisikan data untuk line chart
+var lineChartData = {
+labels: ['2018', '2019', '2020', '2021', '2022'],
+datasets: [{
+label: 'Pertumbuhan Jumlah Wisatawan',
+data: [539485, 703136, 223805, 254969, 379874],
+backgroundColor: '#94c045',
+borderColor: '#94c045',
+borderWidth: 1
+}]
+};
+
+// Membuat line chart
+var lineChartCtx = document.getElementById('lineChart').getContext('2d');
+var lineChart = new Chart(lineChartCtx, {
+type: 'line',
+data: lineChartData,
+options: {
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero: true
+}
+}]
+}
+}
+});
+</script>
+
+</body>
+</html>

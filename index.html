@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>    
+  .table-container {
+  height: 300px; /* Tinggi container tabel */
+  overflow: auto; /* Membuat scroll jika konten melebihi tinggi container */
+  opacity: 0; /* Mengatur opacity menjadi 0 sehingga tabel awalnya tidak terlihat */
+  transition: opacity 0.5s; /* Efek transisi saat tabel muncul */
+}
+
+.table-container.show {
+  opacity: 1; /* Mengubah opacity menjadi 1 sehingga tabel terlihat saat scroll di dalam container */
+}
+
+  tbody tr:hover {
+    background-color: #94c045;
+    cursor: pointer;
+  }
+
+
+  /* Menerapkan animasi pada elemen tbody */
+  tbody {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pariwisata Temanggung</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Serenity
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/pesona.png" alt="" class="img-fluid"></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+              <li><a class="active" href="index.html">home</a></li>
+              <li><a href="about.html">tentang</a></li>
+              <li><a href="layanan.html">Layanan</a></li>
+              <li><a href="galeri.html">Galeri Foto</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+
+          <li><a class="getstarted" href="about.html">Isi Kuisioner</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>Selamat Datang</h1>
+      <h2>Pusat Informasi Wisata Temanggung</h2>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-end">
+          <div class="col-lg-11">
+            <div class="row justify-content-end">
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box py-5">
+                    <i class="bi bi-bank"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="5920832873" class="purecounter">5</span>
+                    <p>Pendapatan Sektor Pariwisata Temanggung Tahun 2022 (IDR)</p>
+                </div>
+            </div>
+            
+              
+              
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box py-5">
+                  <i class="bi bi-person-plus"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="379874" class="purecounter">0</span>
+                  <p>Wisatawan Lokal Tahun 2022</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box pb-5 pt-0 pt-lg-5">
+                  <i class="bi bi-person-plus-fill"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="49" class="purecounter">0</span>
+                  <p>Wisatawan Mancanegara Tahun 2022</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box pb-5 pt-0 pt-lg-5">
+                  <i class="bi bi-award"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="590" class="purecounter">0</span>
+                  <p>Tenaga Kerja Pariwisata Tahun 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <iframe src="peta.html" style="height: 600px; width: 100%; border: none;"></iframe></div>
+          <div class="table-container">
+            <h2 class="text-center">Daftar Nama Rekomendasi Wisata Temanggung</h2>
+            <h6 class="text-center">Klik Tabel Jika Ingin Mengetahui Informasi Lokasi Lebih Jauh</h6>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Jenis</th>
+                    <th>Biaya Masuk</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/RoZi71XEYSWAxYuV7';">
+                    <td>1</td>
+                    <td>Embung Kledung</td>
+                    <td>Jl. Raya Parakan-Wonosobo No.KM.12, Kec. Kledung, Kab. Temanggung.</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp7.000-Rp15.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/2QgH8ygTiqYNr42j6';">
+                    <td>2</td>
+                    <td>Pikatan Waterpark</td>
+                    <td>Jl. Raya Pikatan,Mudal, Kec. Temanggung, Kab. Temanggung</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp15.000-Rp20.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/DoBa99MierecJvJy5';">
+                    <td>3</td>
+                    <td>Candi Pringapus</td>
+                    <td>Pringapus, Kec. Ngadirejo, Kab. Temanggung</td>
+                    <td>Wisata Budaya</td>
+                    <td>Rp3.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/vm7tYfEzB71XK69d8';">
+                    <td>4</td>
+                    <td>Posong Natural Park</td>
+                    <td>Tlahap, Kec. Kledung, Kab. Temanggung</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp20.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/VJDTJkDRtxKiBpqN8';">
+                    <td>5</td>
+                    <td>Bukit Sikendil</td>
+                    <td>Sibajag, Sikatok, Canggal, Kec. Candiroto, Kab. Temanggung</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp15.000-Rp20.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/LGAYXZcMFYwKsZM28';">
+                    <td>6</td>
+                    <td>Embung Bansari</td>
+                    <td>Bansari, Kec. Bansari, Kabupaten Temanggung, Jawa Tengah</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp5.000-Rp15.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/BDHPRnZUkS7Fggmu9';">
+                    <td>7</td>
+                    <td>Pasar Papringan Ngadiprono</td>
+                    <td>Ngadiprono, Ngadimulyo, Kedu, Kabupaten Temanggung</td>
+                    <td>Wisata Kuliner</td>
+                    <td>Gratis</td>
+                  </tr>
+                  <tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/4zpAEzcBhk8NEC7t5';">
+                    <td>8</td>
+                    <td>Puncak Botorono</td>
+                    <td>Petarangan, Kec. Kledung, Temanggung, Jawa Tengah</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp5.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/rNMsz4CnYXAdG2LV9';">
+                    <td>9</td>
+                    <td>Wisata Alam Jumprit</td>
+                    <td>Jumprit, Tegalrejo, Kec. Ngadirejo, Kabupaten Temanggung</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp5.000-Rp15.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/fTpoivaejGXTscx48';">
+                    <td>10</td>
+                    <td>Bukit Kembang Arum</td>
+                    <td>Prangkokan, Kec. Bejen, Kabupaten Temanggung</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp5.000-Rp10.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/JZnCZkKqktecnofr9';">
+                    <td>11</td>
+                    <td>Sigandul View</td>
+                    <td>Jalan Raya Parakan-Wonosobo, Kwadungan Jurang, Kecamatan Kledung, Temanggung</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp15.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/d5Yi4gDTnShuJCmh8';">
+                    <td>12</td>
+                    <td>Tirto Asri Water Splash</td>
+                    <td>Jl. Secang-Temanggung, Kauman, Kowangan, Kec Temanggung, Kab. Temanggung</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp15.000-Rp20.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/U8YLwXNTcvSRX3xC6';">
+                    <td>13</td>
+                    <td>Kolam Renang Simpleng</td>
+                    <td>Purwosari, Gondosuli, Kec. Bulu, Kabupaten Temanggung</td>
+                    <td>Wisata Buatan</td>
+                    <td>Rp15.000-Rp20.000</td>
+                  </tr>
+                    <tr onclick="window.location.href = 'https://goo.gl/maps/ibG6xmCvwRU7D8sa8';">
+                    <td>14</td>
+                    <td>Wisata Alam Sigrowong</td>
+                    <td>Rowo Seneng, Hutan, Gesing, Kandangan, Kab. Temanggung</td>
+                    <td>Wisata Alam</td>
+                    <td>Rp15.000-Rp20.000</td>
+                    </tr>
+                      </tbody>
+                       </table>
+
+                  </div>
+                    <script>
+                        window.addEventListener('scroll', function() {
+                        var tableContainer = document.querySelector('.table-container');
+                        var tableTop = tableContainer.offsetTop;
+                        var tableBottom = tableTop + tableContainer.offsetHeight;
+
+                        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                        if (scrollTop > tableTop && scrollTop < tableBottom) {
+                          tableContainer.classList.add('show');
+                        } else {
+                          tableContainer.classList.remove('show');
+                        }
+                      });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+     </div>
+        </section>
+    
+    <!-- End About Section -->    
+
+    </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Pusat Informasi Wisata Temanggung</h3>
+            <p>Pusat Informasi Wisata Temanggung adalah sumber informasi terpercaya tentang objek wisata, kegiatan, dan layanan di Temanggung. Dengan tim profesional yang siap membantu, pusat ini memberikan panduan lengkap untuk merencanakan perjalanan dan menikmati pesona wisata Temanggung. Dapatkan informasi terbaru yang tersedia di sini.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Tentang</a></li>
+              <li><a href="layanan.html">Layanan</a></li>
+              <li><a href="galeri.html">Galeri Foto</a></li>
+              <li><a href="kontak.html">kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Gedung SV UGM, Sekip Unit 1, Jl. Persatuan, Blimbing Sari, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281 <br>
+              Universitas Gadjah Mada <br>
+              <strong>Phone:</strong> 082134962458<br>
+              <strong>Email:</strong> bilal.rayhan.nuh@mail.ugm.ac.id<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/bilal.rayhannuh.1" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/nuhryhns?igshid=MzNlNGNkZWQ4Mg==" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/bilal-rayhan-nuh-333b9721b" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Kritik dan Saran</h4>
+            <p>Kami menghargai masukan, kritik, dan saran Anda. Kami selalu terbuka untuk mendengar dan meningkatkan layanan kami agar dapat memberikan pengalaman terbaik bagi pengunjung. Silakan berikan masukan Anda melalui kuisioner kami untuk membantu kami memahami kebutuhan dan harapan Anda. Terima kasih atas partisipasi Anda!</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Bilal Rayhan Nuh</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/serenity-bootstrap-corporate-template/ -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+
+</body>
+
+</html>
