@@ -3,8 +3,37 @@
 
 <head>
   <style>
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 20px;
+}
 
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
+.navbar-links li {
+  margin-left: 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-nav-toggle {
+  font-size: 20px;
+  cursor: pointer;
+}
 
   .table-container {
   height: 300px; /* Tinggi container tabel */
@@ -86,7 +115,6 @@
               <li><a href="galeri.html">Galeri Foto</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="kontak.html">Kontak</a></li>
-
           <li><a class="getstarted" href="about.html">Isi Kuisioner</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -295,12 +323,7 @@
     <!-- End About Section -->    
 
     </main><!-- End #main -->
-  <li><a class="active" href="index.html">home</a></li>
-              <li><a href="about.html">tentang</a></li>
-              <li><a href="layanan.html">Layanan</a></li>
-              <li><a href="galeri.html">Galeri Foto</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="kontak.html">Kontak</a></li>
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
